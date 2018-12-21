@@ -1,0 +1,29 @@
+Book.java
+
+public class Book {
+    String name;
+    String author;
+    int length;
+
+    public Book(String name, String author, int length) {
+        this.name = name;
+        this.author = author;
+        this.length = length;
+    }
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", length=" + length +
+                '}';
+    }
+    
+}
+Main.java
+public class Main {
+    public static void main(String[] args) {
+        Book book = new Book("jvav for dumies", "kitty cute",100);
+        System.out.println(book.toString());
+    }
+}
